@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<link href = "editor.css" rel = "stylesheet">
+<html>
+<head>
+	<title>PSU Sportsbook</title>
+
+<!-- Another script 
+	slideshow script same code -->
+<script>
+	var save = 1;
+	var caption = ["Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!", "Over 50+ HTML5 Casino Games Avilable!"]
+
+	function moveForward(){
+		save = save + 1;
+
+		document.getElementById("backimage").src="slide2/pic" + save + ".jpg";
+
+		if(save == 7){
+			save = 1;
+			document.getElementById("backimage").src = "slide2/pic" + save + ".jpg";
+		}
+
+		document.getElementById("captions").innerHTML = caption[save - 1];
+	}
+
+	function moveBackward(){
+		save = save - 1;
+
+		document.getElementById("backimage").src = "slide2/pic" + save + ".jpg";
+
+		if (save == 0){
+			save = 6;
+			document.getElementById("backimage").src = "slide2/pic" + save + ".jpg"
+		}
+
+		document.getElementById("captions").innerHTML = caption[save - 1];
+ 	}
+</script>
+
+</head>
+<body>
+	<header>
+		<!-- Header created including using my logo -->
+		<ul id = "theTitle">
+		<h1><a href = "index.html"><img src="logo.png" alt = "PSU Sportsbook" width ="600" height="200"></a> </h1>
+	</header>
+
+
+	<!-- Navigation bar created for navigation through pages -->
+	<nav>
+		<br>
+			<li1 id = "home"><a href="index.html"><img src="home.png" alt = "Home" width="132" height="100"></a></li1>
+			<li2 id = "gamelines"><a href="lines.html"><img src="gamelines.png" alt="Game Lines" width="132" height = "100"></a></li2>
+			<li3 id = "onlineCasino"><a href="casino.html"><img src = "casino.png" alt="Online Casino" with="132" height="100"></a></li3>
+			<li4 id = "contactus"><a href="contactus.html"><img src = "support.png" alt = "Contact Us" width = "132" height="100"></a></li4>
+	</nav>
+
+	<!-- Calling the functions made above for the slide show.
+	The buttons and captions are being placed here included.  -->
+	<div align = "center" id = "divboo">
+		<br><br><br><br><br><br><br><br><br>
+		<img src = "slide2/pic1.jpg" width = "440px" height = "300px" id = "backimage">
+		<br><br>
+		<input value = "Back" type = "submit" id = "right" onclick = "moveBackward()">
+		<input value = "Next" type = "submit" id = "right" onclick = "moveForward()">
+
+		<p id = "captions"></p>
+	
+	
+	<main>
+
+		<!-- Animation  -->
+		<div id="advertisement">
+   		<a href="contactus.html">Chat with Agent</a>
+		</div>
+
+		<div id="yuhski">
+			<a href="https://www.fanduel.com/sportsbook-search?rfr=9_2_001_0001&utm_source=google&utm_medium=cpc&utm_campaign=brand&gclid=CjwKCAiA-9uNBhBTEiwAN3IlNDztqxFwSO4MZrVwcZjbBh2D7b-Xy1cBgRXJi1VEuXSvX_a0Y7-61hoCgskQAvD_BwE">	<p>Take me there now!</p></a>
+		</div>
+
+		<br><br>
+
+		<div>
+			<br>
+			<p1>1-800-555-5555 </p1>
+			<br>
+			<p2>1242 Grassy Lane</p2>
+			<br>
+			<p3>State College, PA 16803</p3>
+		</div>
+
+
+
+	<footer>
+		<!-- Footer here  -->
+
+			<br>
+
+			<p1><small>Copyright &copy; 2021 PSU Sportsbook</small> </p1>
+			<br>
+			<p2 style="color: blue"><small>Philipchenard@verizon.net</small></p2>
+		</footer>
+		</main>	
+
+</html>

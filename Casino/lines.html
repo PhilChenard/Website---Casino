@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<link href = "editor.css" rel = "stylesheet">
+<html>
+<head>
+	<title>PSU Sportsbook</title>
+
+
+	<!--Functions created here-->
+	<!-- The Move Forward is for the Next button in slideshow -->
+	<!-- The Move Backward is for the Back button in slideshow -->
+<script>
+
+
+	var save = 1;
+	var caption = ["Sports", "Live Casino", "Live Sports", "Casino"]
+
+	function moveForward(){
+		save = save + 1;
+
+		document.getElementById("backimage").src="slide/pic" + save + ".png";
+
+		if(save == 5){
+			save = 1;
+			document.getElementById("backimage").src = "slide/pic" + save + ".png";
+		}
+
+		document.getElementById("captions").innerHTML = caption[save - 1];
+	}
+
+	function moveBackward(){
+		save = save - 1;
+
+		document.getElementById("backimage").src = "slide/pic" + save + ".png";
+
+		if (save == 0){
+			save = 4;
+			document.getElementById("backimage").src = "slide/pic" + save + ".png"
+		}
+
+		document.getElementById("captions").innerHTML = caption[save - 1];
+ 	}
+
+</script>
+</head>
+<body>
+	<!-- Header with image logo.  -->
+	<header>
+		<ul id = "theTitle">
+		<h1><a href = "index.html"><img src="logo.png" alt = "PSU Sportsbook" width ="600" height="200"></a> </h1>
+	</header>
+
+
+	<!-- Navigation Bar to Navigate from page to page.  -->
+	<nav>
+		<br>
+			<li1 id = "home"><a href="index.html"><img src="home.png" alt = "Home" width="132" height="100"></a></li1>
+			<li2 id = "gamelines"><a href="lines.html"><img src="gamelines.png" alt="Game Lines" width="132" height = "100"></a></li2>
+			<li3 id = "onlineCasino"><a href="casino.html"><img src = "casino.png" alt="Online Casino" with="132" height="100"></a></li3>
+			<li4 id = "contactus"><a href="contactus.html"><img src = "support.png" alt = "Contact Us" width = "132" height="100"></a></li4>
+	</nav>
+
+	<!-- Calling the functions made above for the slide show.
+	The buttons and captions are being placed here included.  -->
+	<div id = "divtwo">
+
+		<img src = "slide/pic1.png" width = "550px" height = "400px" id = "backimage">
+		<br><br>
+		<input value = "Back" type = "submit" id = "right" onclick = "moveBackward()">
+		<input value = "Next" type = "submit" id = "right" onclick = "moveForward()">
+
+		<p id = "captions"></p>
+
+
+	<!-- Table created
+		Shows the Game Lines 
+		 -->
+	<table>
+
+		<tr>
+			<th align = "left">Teams:</th>
+			<th align = "left">Spread:</th>
+			<th align = "left">Over/Under:</th>
+			<th align = "left">Money Line:</th>
+		</tr>
+		<tr>
+			<td>76ers vs Warriors</td>
+			<td>76ers -3.5 | Warriors +3.5</td>
+			<td>O/U 243</td>
+			<td>76ers -200 | Warriors +320</td>
+		</tr>
+		<tr>
+			<td>Bucks vs Hawks</td>
+			<td>Bucks -12.5 | Hawks +13</td>
+			<td>O/U 221</td>
+			<td>Bucks -520 | Hawks + 600</td>
+		</tr>
+		<tr>
+			<td>Clippers vs Lakers</td>
+			<td>Clippers -0.5 | Lakers +0.5</td>
+			<td>O/U 254.5</td>
+			<td>Clippers EV | Lakers +120</td>
+		</tr>
+		<tr>
+			<td>Mavs vs Knicks</td>
+			<td>Mavs +5 | Knicks -4.5</td>
+			<td>O/U 215.5</td>
+			<td>Mavs +220 | Knicks -300</td>
+		</tr>
+		<tr>
+			<td>Raptors vs Bulls</td>
+			<td>Raptors +12.5 | Bulls -13</td>
+			<td>O/U 215.5</td>
+			<td>Raptors +500 | Bulls -520</td>
+		</tr>
+
+
+	</table>	
+	
+	
+	<main>
+
+		<!-- Advertisement that drops down. 
+			Animation included in the CSS -->
+		<div id="advertisement">
+   		<a href="contactus.html">Chat with Agent</a>
+		</div>
+
+		<br><br>
+
+		<div>
+			<br>
+			<p1>1-800-555-5555 </p1>
+			<br>
+			<p2>1242 Grassy Lane</p2>
+			<br>
+			<p3>State College, PA 16803</p3>
+		</div>
+
+	<footer>
+
+			<br>
+
+			<p1><small>Copyright &copy; 2021 PSU Sportsbook</small> </p1>
+			<br>
+			<p2 style="color: blue"><small>Philipchenard@verizon.net</small></p2>
+		</footer>
+		</main>	
+
+</html>

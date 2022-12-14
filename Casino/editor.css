@@ -1,0 +1,145 @@
+#divboo{
+	margin-left: 0px;
+}
+
+#yuhski{
+	margin-left: -60px;
+}
+
+table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border-color: red;
+	margin-left: -190px;
+}
+
+td, th{
+	border: 1px solid red;
+	text-align: left;
+	height: 30px;
+	background-color: blue;
+	color: white;
+}
+
+#divtwo{
+	margin-left: 455px;
+}
+
+#thankYou{
+	margin-left: 500px;
+	color: red;
+}
+
+body{
+	background-color: #FFFFFF;
+	color:  #000066;
+	font:  Verdana;
+}
+
+header{
+	background-color: #000066;
+	color:  #FFFFFF;
+
+}
+
+h1{
+	text-align: center;
+	margin-left: -40px;
+	background-color: black;
+
+}
+
+nav{
+	display: block;
+	text-align: center;
+	float: left;
+	padding: 12px;
+	margin-left: 465px;
+
+}
+
+
+footer{
+	font-size: small;
+	font-weight: italic;
+	text-decoration: underline;
+	padding: 10px;
+	margin-left: 90px;
+	color: white;
+
+}
+
+main{
+	margin-left: 60px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+}
+
+body{
+	background-color: black;
+}
+
+div{
+	margin-left: 100px;
+	color: white;
+}
+
+header,nav,main,footer{display: block;}
+
+
+
+
+@keyframes lowerAd {
+   from { top: -200px; }   
+   to { top: 400px; }
+}
+
+#advertisement {
+   animation-name: lowerAd;
+   animation-duration: 1s;
+   animation-delay: 2s;
+   animation-fill-mode: forwards;      
+   position: fixed;
+   right: 30px;
+   top: -200px;
+   width: 100px;
+   background: linear-gradient(red, white);
+   box-shadow: 5px 5px;
+   padding: 10px;
+   border-radius: 4px; 
+   transition: all 200ms ease-in-out;  
+ }
+
+ dt{
+ 	margin-top: 50px;
+ 	margin-left: 80px;
+ 	color: white;
+ }
+
+ dd{
+ 	color: white;
+ 	margin-left: 100;
+ }
+
+
+
+
+ #advertisement:hover {
+   transform: scale(1.5, 1.5);
+}
+
+
+
+#home {
+	width: 30px;
+}
+
+
+
+#gamelines {
+	width: 100px;
+}
+
+
